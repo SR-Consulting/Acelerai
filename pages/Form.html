@@ -21,6 +21,9 @@
         .FormBorder {
             background-color: rgba(255, 192, 203, 0.8);
             padding: 20px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            width: 400px;
             border-radius: 10px;
             animation: borderAnimation 5s infinite;
         }
@@ -93,7 +96,7 @@
             method="POST">
 
             <input type=hidden name="oid" value="00DHn000001A8po">
-            <input type=hidden name="retURL" value="https://eduardobtc.github.io/AceleraiFormularioDemo/Thankyou.html">
+            <input type=hidden name="retURL" value="https://srconsulting.io/Acelerai/pages/Thankyou.html">
             <label for="first_name">Primeiro Nome</label><input id="first_name" maxlength="40" name="first_name"
                 size="20" type="text" /><br>
 
@@ -110,19 +113,18 @@
             <label for="state">Estado/província</label><input id="state" maxlength="20" name="state" size="20"
                 type="text" /><br>
 
-            <label for="street">Rua</label><input id="state" name="street"></input><br>
+            <label for="street">Rua</label><input name="street" type="text"></input><br>
 
             <label for="zip">CEP</label><input id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
 
-            <label for="description">Descrição</label><input name="description"></input><br>
+            <label for="description">Descrição</label><input name="description" type="text"></input><br>
 
             <label for="phone">Telefone</label><input id="phone" maxlength="40" name="phone" size="20"
                 type="text" /><br>
 
             <label for="url">Site da Web</label><input id="url" maxlength="80" name="url" size="20" type="text" /><br>
-
-            Celebridades de interesse:<select id="00NHn00000BlGlK" multiple="multiple" name="00NHn00000BlGlK"
-                title="Celebridades de interesse">
+            <label for="picklist">Celebridades de interesse:</label><select id="00NHn00000BlGlK" multiple="multiple"
+                name="00NHn00000BlGlK" title="Celebridades de interesse" class="FormBorder">
                 <option value="ADRIANE GALISTEU">ADRIANE GALISTEU</option>
                 <option value="ANTONIA MORAIS">ANTONIA MORAIS</option>
                 <option value="BOB FLORIANO">BOB FLORIANO</option>
