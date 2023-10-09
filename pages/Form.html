@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta http-enquiv="Content-type" content="text/html; charset=UTF-8">
+
+<head>
+    <style>
+        body {
+            background-image: url('desktop.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .FormBorder {
+            background-color: rgba(255, 192, 203, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            animation: borderAnimation 5s infinite;
+        }
+
+        @keyframes borderAnimation {
+            0% {
+                border: 2px solid pink;
+            }
+
+            50% {
+                border: 2px solid purple;
+            }
+
+            100% {
+                border: 2px solid blue;
+            }
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            color: black;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 2px solid pink;
+            border-radius: 5px;
+        }
+
+        .g-recaptcha {
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: pink;
+            color: black;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .embeddedServiceHelpButton .helpButton .uiButton {
+            background-color: #000000;
+            font-family: "Arial", sans-serif;
+        }
+
+        .embeddedServiceHelpButton .helpButton .uiButton:focus {
+            outline: 1px solid #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="FormBorder">
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHn000001A8po"
+            method="POST">
+
+            <input type=hidden name="oid" value="00DHn000001A8po">
+            <input type=hidden name="retURL" value="https://eduardobtc.github.io/AceleraiFormularioDemo/Thankyou.html">
+            <label for="first_name">Primeiro Nome</label><input id="first_name" maxlength="40" name="first_name"
+                size="20" type="text" /><br>
+
+            <label for="last_name">Sobrenome</label><input id="last_name" maxlength="80" name="last_name" size="20"
+                type="text" /><br>
+
+            <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+            <label for="company">Empresa</label><input id="company" maxlength="40" name="company" size="20"
+                type="text" /><br>
+
+            <label for="city">Cidade</label><input id="city" maxlength="40" name="city" size="20" type="text" /><br>
+
+            <label for="state">Estado/província</label><input id="state" maxlength="20" name="state" size="20"
+                type="text" /><br>
+
+            <label for="street">Rua</label><input id="state" name="street"></input><br>
+
+            <label for="zip">CEP</label><input id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
+
+            <label for="description">Descrição</label><input name="description"></input><br>
+
+            <label for="phone">Telefone</label><input id="phone" maxlength="40" name="phone" size="20"
+                type="text" /><br>
+
+            <label for="url">Site da Web</label><input id="url" maxlength="80" name="url" size="20" type="text" /><br>
+
+            Celebridades de interesse:<select id="00NHn00000BlGlK" multiple="multiple" name="00NHn00000BlGlK"
+                title="Celebridades de interesse">
+                <option value="ADRIANE GALISTEU">ADRIANE GALISTEU</option>
+                <option value="ANTONIA MORAIS">ANTONIA MORAIS</option>
+                <option value="BOB FLORIANO">BOB FLORIANO</option>
+                <option value="BRUNO DE LUCCA">BRUNO DE LUCCA</option>
+                <option value="CAROLINA FERRAZ">CAROLINA FERRAZ</option>
+                <option value="CAUÃ REYMOND">CAUÃ REYMOND</option>
+                <option value="DANIELLE WINITS">DANIELLE WINITS</option>
+                <option value="DEBORAH SECCO">DEBORAH SECCO</option>
+                <option value="FERNANDA FAVERON">FERNANDA FAVERON</option>
+                <option value="GIOVANNA ANTONELLI">GIOVANNA ANTONELLI</option>
+                <option value="GLORIA PIRES">GLORIA PIRES</option>
+                <option value="HELIO DE LA PEÑA">HELIO DE LA PEÑA</option>
+                <option value="JOJO TODYNHO">JOJO TODYNHO</option>
+                <option value="JULIANA PAES">JULIANA PAES</option>
+                <option value="KIKO D&#39;ANGELO">KIKO D&#39;ANGELO</option>
+                <option value="LUCIANA GIMENEZ">LUCIANA GIMENEZ</option>
+                <option value="LUIS ERNESTO LACOMBE">LUIS ERNESTO LACOMBE</option>
+                <option value="MARCELO SERRADO">MARCELO SERRADO</option>
+                <option value="MARCOS PASQUIM">MARCOS PASQUIM</option>
+                <option value="MARIANO">MARIANO</option>
+                <option value="MARYEVA OLIVEIRA">MARYEVA OLIVEIRA</option>
+                <option value="MICHELLE BARROS">MICHELLE BARROS</option>
+                <option value="MURILO BENÍCIO">MURILO BENÍCIO</option>
+                <option value="RODRIGO FARO">RODRIGO FARO</option>
+                <option value="VERA VIEL">VERA VIEL</option>
+                <option value="VITÓRIA STRADA">VITÓRIA STRADA</option>
+            </select><br>
+
+            <input type="submit" name="submit">
+
+        </form>
+    </div>
+    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+    <script type='text/javascript'>
+        var initESW = function (gslbBaseURL) {
+            embedded_svc.settings.displayHelpButton = true; //Or false
+            embedded_svc.settings.language = 'pt-BR'; //For example, enter 'en' or 'en-US'
+
+            embedded_svc.settings.defaultMinimizedText = 'Falar com atendente'; //(Defaults to Chat with an Expert)
+            //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+            embedded_svc.settings.loadingText = 'Carregando'; //(Defaults to Loading)
+            //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+            // Settings for Chat
+            //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+            // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+            // Returns a valid button ID.
+            //};
+            //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+            //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+            //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+
+            embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+            embedded_svc.settings.entryFeature = 'LiveAgent';
+
+            embedded_svc.init(
+                'https://acelerai.my.salesforce.com',
+                'https://acelerai.my.site.com/PortalAcelerai',
+                gslbBaseURL,
+                '00DHn000001A8po',
+                'ChatSite',
+                {
+                    baseLiveAgentContentURL: 'https://c.la3-c1-ia6.salesforceliveagent.com/content',
+                    deploymentId: '572Hn0000000PBU',
+                    buttonId: '573Hn000000LBIj',
+                    baseLiveAgentURL: 'https://d.la3-c1-ia6.salesforceliveagent.com/chat',
+                    eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IHn0000004EQgMAM_18afa9c69b9',
+                    isOfflineSupportEnabled: false
+                }
+            );
+        };
+
+        if (!window.embedded_svc) {
+            var s = document.createElement('script');
+            s.setAttribute('src', 'https://acelerai.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+            s.onload = function () {
+                initESW(null);
+            };
+            document.body.appendChild(s);
+        } else {
+            initESW('https://service.force.com');
+        }
+    </script>
+</body>
+
+</html>
